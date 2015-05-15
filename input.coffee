@@ -12,6 +12,9 @@ class exports.Input extends Layer
 		get: -> @input.style
 		set: (value) ->
 			_.extend @input.style, value
+			
+	@define "text",
+		get: -> @input.value
 
 	constructor: (options = {}) ->
 		options.setup ?= false
